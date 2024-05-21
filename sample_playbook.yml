@@ -10,7 +10,7 @@
         state: latest
     - name: push web content
       ansible.builtin.copy:
-        src: files/index.html
+        src: index.html
         dest: "{{ web_doc_root }}" 
     - name: starting web server
       ansible.builtin.service:
