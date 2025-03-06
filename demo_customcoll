@@ -1,0 +1,4 @@
+- hosts: servera
+  become: true
+  roles:
+    - role: rhlsp.democol.ntpsetup
